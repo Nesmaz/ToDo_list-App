@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Courgette', cursive;font-family: 'Indie Flower', cursive;*/font-family: 'Poppins', sans-serif;
+}
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.container{
+    background-image: url("./media/Galaxy-discovered-by-A-b-b-y-a_tm-on-We-Heart-It.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.todo{
+    background-color:rgba(8, 12, 24, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 500px;
+    height: 70vh;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    -ms-border-radius:10px;
+    -o-border-radius:10px;
+}
+.todo h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 0 auto 30px auto;
+    color: rgb(193, 198, 228);
+    
+}
+
+.todo img{
+    height: 60px;
+    margin-left: 30px;
+}
+
+.row{
+    background-color: rgba(1, 39, 116, 0.2);
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+.row input{
+    padding-left: 20px;
+    border-radius: 4px;
+    border: none;
+    flex: 1;
+    background: transparent;
+    color: rgb(193, 198, 228);
+    font-size: 22px;
+}
+.row input:focus{
+    outline: none;
+}
+
+.row input::placeholder{
+    color: rgb(193, 198, 228);
+    font-size: 22px;
+}
+
+.row button{
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    color: rgb(193, 198, 228);
+    background-color: rgba(1, 39, 116, 0.7);
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer; 
+
+
+}
+
+ul li{
+    list-style: none;
+    color: rgb(193, 198, 228);
+    font-size: 20px;
+    user-select: none;
+    cursor: pointer;
+    padding: 20px 8px 15px 40px;
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid rgb(64, 89, 211);
+    top: 30%;
+    left: -10px;
+    margin-right: 15px;
+    background-image: url("./media/circle.png");
+    background-size: cover;
+    background-position: center;
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    color: rgb(193, 198, 228);
+}
+
+ul li.checked::before{
+    background-image: url("./media/check-circle.png");
+
+}
+ul li span{
+    position: absolute;
+    color: aliceblue;
+     
+
+}
