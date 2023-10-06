@@ -2,18 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* font-family: 'Courgette', cursive;font-family: 'Indie Flower', cursive;*/font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
-
 .container{
-    background-image: url("./media/Galaxy-discovered-by-A-b-b-y-a_tm-on-We-Heart-It.gif");
+    background-image: url("/media/Galaxy-discovered-by-A-b-b-y-a_tm-on-We-Heart-It.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,14 +21,15 @@
     background-color:rgba(8, 12, 24, 0.5);
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 450px;
     max-width: 500px;
-    height: 70vh;
+    max-height: 80vh;
     border-radius:10px;
     -webkit-border-radius:10px;
     -moz-border-radius:10px;
     -ms-border-radius:10px;
     -o-border-radius:10px;
+    overflow: hidden;
 }
 .todo h2{
     display: flex;
@@ -94,14 +88,31 @@
 
 }
 
+ul {
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+display: none;
+}
 ul li{
     list-style: none;
     color: rgb(193, 198, 228);
-    font-size: 20px;
+    font-size: 24px;
     user-select: none;
     cursor: pointer;
     padding: 20px 8px 15px 40px;
     position: relative;
+    background-color: rgba(1, 39, 116, 0.05);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 8px 0;
+    text-wrap: wrap;
+    word-wrap: break-word;
 }
 
 ul li::before {
@@ -113,25 +124,44 @@ ul li::before {
     border-radius: 50%;
     border: 2px solid rgb(64, 89, 211);
     top: 30%;
-    left: -10px;
+    left: 0;
     margin-right: 15px;
-    background-image: url("./media/circle.png");
+    background-image: url("/media/circle.png");
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 ul li.checked{
     text-decoration: line-through;
-    color: rgb(193, 198, 228);
+
 }
 
 ul li.checked::before{
-    background-image: url("./media/check-circle.png");
+    background-image: url("/media/check-circle.png");
 
 }
 ul li span{
     position: absolute;
-    color: aliceblue;
-     
+    color: rgb(193, 198, 228);
+    right :  0;
+    margin: 5px 0;
+    cursor: pointer;
+    bottom: 8px;
+    font-size: 24px;
+    text-align: center;
+    width: 60px;
+    height: 40px;
+    padding-top: 4px;
 
+
+}
+
+ul li span:hover{
+    background-color: rgba(1, 39, 116, 0.7);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
