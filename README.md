@@ -27,4 +27,4 @@ This is a to-do list app that helps you keep track of your tasks and get things 
 
 ## screenshot
 
-![](./media/FireShot%20Capture%20005%20-%20To-do%20List%20-%20127.0.0.1.png)
+![](/media/FireShot%20Capture%20005%20-%20To-do%20List%20-%20127.0.0.1.png)
