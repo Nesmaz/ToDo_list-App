@@ -6,7 +6,7 @@
 }
 
 .container{
-    background-image: url("media/Galaxy-discovered-by-A-b-b-y-a_tm-on-We-Heart-It.gif");
+    background-image: url("../media/1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,24 +18,24 @@
     border-radius: 10px;
 }
 .todo{
-    background-color:rgba(8, 12, 24, 0.5);
+    background-color: rgb(242,59,63, 0.05);
     padding: 20px;
+    box-shadow: 0px 0px 12px 6px rgb(112 175 215 / 20%);
     border-radius: 10px;
-    width: 450px;
-    max-width: 500px;
+    max-width: 400px;
     max-height: 80vh;
-    border-radius:10px;
-    -webkit-border-radius:10px;
-    -moz-border-radius:10px;
-    -ms-border-radius:10px;
-    -o-border-radius:10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
     overflow: hidden;
 }
 .todo h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     font-size: 0 auto 30px auto;
     color: rgb(193, 198, 228);
     
@@ -47,7 +47,7 @@
 }
 
 .row{
-    background-color: rgba(1, 39, 116, 0.2);
+    background-color: rgba(31, 41, 60, 0.4);
     display: flex;
     justify-content: space-between;
     height: 45px;
@@ -61,7 +61,6 @@
     padding-left: 20px;
     border-radius: 4px;
     border: none;
-    flex: 1;
     background: transparent;
     color: rgb(193, 198, 228);
     font-size: 22px;
@@ -80,12 +79,16 @@
     border-radius: 5px;
     border: none;
     color: rgb(193, 198, 228);
-    background-color: rgba(1, 39, 116, 0.7);
+    background-color: rgb(66 81 108);
     font-weight: bold;
     font-size: 16px;
     cursor: pointer; 
 
 
+}
+
+.container .todo #list{
+    padding-bottom: 55px;
 }
 
 ul {
@@ -158,10 +161,16 @@ ul li span{
 }
 
 ul li span:hover{
-    background-color: rgba(1, 39, 116, 0.7);
+    background-color: rgb(66 81 108);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+}
+
+@media all and (max-width: 400px){
+    .row button{
+        margin-left: -60%;
+    }
 }
