@@ -24,9 +24,3 @@ This is a to-do list app that helps you keep track of your tasks and get things 
 3. Click "Add" to add the task to your list.
 4. To delete a task, click on the "x" button next to the task name.
 5. To mark a task as completed, click on the task or the checkbox next to the task name.
-
-## screenshot
-
-![](./media/FireShot%20Capture%20004%20-%20To-do%20List%20-%20127.0.0.1.png)
-
-![](./media/FireShot%20Capture%20005%20-%20To-do%20List%20-%20127.0.0.1.png)
